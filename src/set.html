@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./assets/css/set.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Into Wallet</title>
+    <script type="module" src="./assets/js/jquery.min.js"></script>
+    <script type="module" src="./assets/js/set.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="left_body">
+        <p class="unlock">
+            设置
+        </p>
+        <p class="set_desc">
+            设置钱包解锁密码，以保护你的资产安全。
+        </p>
+        <p class="pwd_title">
+            密码
+        </p>
+        <input type="password" id="pwd_input" placeholder="请设置解锁密码">
+        <input type="password" id="pwd_input_repeat" placeholder="请再次确认密码">
+        <button id="reset_pwd">确认</button>
+    </div>
+    <div id="right_body">
+        <img class="logo" src="./assets/imgs/logo.png">
+        <p class="wallet_name">INTO WALLET</p>
+        <footer class="footer">
+            YOUR UNIVERSAL DIGITAL WALLET
+        </footer>
+    </div>
+    <div id="alert_pwd_error">
+        <div class="body">
+            <img class="close" src="./assets/imgs/close.png">
+            <p class="title">提示</p>
+            <div class="sub_title">
+                如因忘记密码、版本升级或其他原因导致无法登入，可点击“确定”按钮重置钱包，重新导入私钥。
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

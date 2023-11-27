@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./assets/css/import_private_key.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Into Wallet</title>
+    <script type="module" src="./assets/js/jquery.min.js"></script>
+    <script type="module" src="./assets/js/import_private_key.js"></script>
+</head>
+<body>
+<div id="container">
+    <img src="./assets/imgs/key.png" class="key">
+    <p class="import_title">导入私钥</p>
+    <input id="import_key_input" placeholder="输入私钥">
+    <button class="import_btn">导入</button>
+    <footer id="footer">
+        <div class="back">返回</div>
+    </footer>
+    <div id="alert_import_key_error">
+        <div class="body">
+            <img class="close" src="./assets/imgs/close.png">
+            <p class="title">提示</p>
+            <div class="sub_title">
+                如因忘记密码、版本升级或其他原因导致无法登入，可点击“确定”按钮重置钱包，重新导入私钥。
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
