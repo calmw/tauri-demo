@@ -2,55 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/user_center.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Into Wallet</title>
     <script type="module" src="./assets/js/jquery.min.js"></script>
-    <script type="module" src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/user_center.js"></script>
 </head>
 <body>
 <div id="container">
     <div id="left_body">
-        <p class="unlock">
-            用户中心
-        </p>
-        <p class="pwd_title">
-            密码
-        </p>
-        <input type="password" id="pwd_input" placeholder="请输入密码">
-        <button id="unlock">解锁</button>
-        <span id="unlock_error">无法解锁?</span>
+        <ul>
+            <li class="menu_iterm">
+                <img src="./assets/imgs/account.png" class="menu_icon">
+                <p class="menu_title">账户</p>
+            </li>
+            <li class="menu_iterm">
+                <img src="./assets/imgs/network.png" class="menu_icon">
+                <p class="menu_title">网络</p>
+            </li>
+            <li class="menu_iterm">
+                <img src="assets/imgs/finance.png" class="menu_icon">
+                <p class="menu_title">资产</p>
+            </li>
+            <li class="menu_iterm">
+                <img src="./assets/imgs/transfer.png" class="menu_icon">
+                <p class="menu_title">转账</p>
+            </li>
+        </ul>
     </div>
     <div id="right_body">
-        <img class="logo" src="assets/imgs/logo.png">
-        <p class="wallet_name">INTO WALLET</p>
-        <footer class="footer">
-            YOUR UNIVERSAL DIGITAL WALLET
-        </footer>
+        <iframe id="frame" src="./user_center/account.html"></iframe>
     </div>
-    <div id="alert_cant_not_unlock">
-        <div class="body">
-            <img class="close" src="./assets/imgs/close.png">
-            <p class="title">提示</p>
-            <div class="sub_title">
-                如因忘记密码、版本升级或其他原因导致无法登入，可点击“确定”按钮重置钱包，重新导入私钥。
-            </div>
-            <p class="note">提示:</p>
-            <p class="note">1.重置钱包前请确保已备份好相关的私钥等重要信息。</p>
-            <p class="note">2.该操作将从计算机中删除所有身份和密钥等数据。</p>
-            <p class="note">3.重置钱包不会删除或影响你在区块链上的账号数据。</p>
-            <button class="ok">确认</button>
-        </div>
-    </div>
-    <div id="alert_pwd_error">
-        <div class="body">
-            <img class="close" src="./assets/imgs/close.png">
-            <p class="title">提示</p>
-            <div class="sub_title">
-                如因忘记密码、版本升级或其他原因导致无法登入，可点击“确定”按钮重置钱包，重新导入私钥。
-            </div>
-        </div>
-    </div>
+<!--    <div id="alert_pwd_error">-->
+<!--        <div class="body">-->
+<!--            <img class="close" src="./assets/imgs/close.png">-->
+<!--            <p class="title">提示</p>-->
+<!--            <div class="sub_title">-->
+<!--                如因忘记密码、版本升级或其他原因导致无法登入，可点击“确定”按钮重置钱包，重新导入私钥。-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 </body>
 </html>

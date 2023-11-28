@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F4F6F9;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#container ui, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#container .account_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#container .account_iterm {
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 10px 10px 20px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#container .account_iterm .set_default {
+    float: right;
+    background-color: #0095FB;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 7px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+#container .account_iterm .del {
+    float: right;
+    background-color: #FA7072;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #fff;
+    margin-top: 5px;
+    height: 40px;
+    line-height: 40px;
+}
